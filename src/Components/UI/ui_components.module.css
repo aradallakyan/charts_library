@@ -1,0 +1,389 @@
+.myCard {
+    justify-content: center;
+    border-radius: 25px;
+    background: #fff;
+    box-shadow: 1px 1px 7px #615EB126;
+    width: 98%;
+}
+
+.modal_background_wrapper {
+    position: absolute;
+    z-index: 100000000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgb(0 0 0 / 16%);
+}
+
+.modal_wrapper {
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+    margin-bottom: 2rem;
+    border-radius: 15px;
+    min-width: 21rem;
+    max-width: 98%;
+    margin: auto;
+    padding-bottom: 2rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.modal_header {
+    display: flex;
+    padding: 1rem;
+    justify-content: right;
+    align-items: center;
+    flex: 1;
+}
+
+.modal_content {
+    flex: 3;
+    /* width: 100%; */
+}
+
+.modalHeaderText {
+    color: #314565;
+    font-weight: 900;
+    margin-left: 0.5rem;
+}
+
+.modal_header_text {
+    width: 98%;
+    display: flex;
+    padding: 0.8rem 0.5rem;
+    align-items: center;
+    justify-content: space-between
+}
+
+.my_button {
+    padding: .5rem 1rem .5rem 1rem;
+    background-color: #E5412D;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.my_button:focus {
+    outline: none;
+}
+
+.my_hr {
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    width: 98%;
+}
+
+.my_input_wrapper {
+    position: relative;
+    cursor: pointer;
+}
+
+.my_input:valid {
+    padding: 0.6rem;
+    border-radius: 7px;
+    width: 89%;
+    background: white;
+    padding-left: 35px;
+    border: solid 1px #dee3f1;
+    outline: none;
+}
+
+.my_input:-webkit-autofill {
+    border: solid 1px #dee3f1;
+    color: black;
+    -webkit-text-fill-color: black;
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+.my_textarea {
+    padding: 0.8rem;
+    border-radius: 11px;
+    background-color: #fff;
+    resize: none;
+    padding-left: 32px;
+    border: solid 1px #dee3f1;
+    outline: none;
+}
+
+.my_input:focus {
+    background-color: white !important;
+    outline: none;
+}
+
+.inp_icon_div {
+    position: absolute;
+    top: 59%;
+    left: 5px;
+    border-right: 1px solid #ccc;
+    padding-right: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.3rem;
+}
+
+.my_input_label {
+    font-size: 15px;
+    padding-bottom: 0.7rem;
+}
+
+.my_radio_input {
+    accent-color: #E5412D;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #E5412D;
+    transition: 0.3s all linear;
+    cursor: pointer
+}
+
+.my_radio_input:checked {
+    border: 1px solid #E5412D;
+}
+
+.my_radio_input:checked:before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 9px;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 7.5px;
+    margin-left: .25rem;
+    background-color: #E5412D
+}
+
+.activeCircleBtn {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #E5412D;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.circleBtn {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #C2CDE8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 6px 3px #c2c2c5a9;
+    cursor: pointer;
+}
+
+
+.containerLabel {
+    display: block;
+    position: relative;
+    padding-left: 21px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.containerLabel input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 15px;
+    transition: 0.4s;
+    width: 15px;
+    border: solid 2px #98a9c9;
+    border-radius: 3px;
+}
+
+.containerLabel input:checked~.checkmark {
+    border: solid 2px #E5412D;
+    border-radius: 3px;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.containerLabel input:checked~.checkmark:after {
+    display: block;
+}
+
+.containerLabel .checkmark:after {
+    left: 5.3px;
+    top: 0.5px;
+    width: 3px;
+    height: 9px;
+    border: solid 2px #E5412D;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.checkmark:hover {
+    transition: 0.4s;
+    border: solid 2px #E5412D;
+}
+
+.inputsDiv {
+    display: flex;
+    align-items: center;
+}
+
+.myLabel {
+    padding-left: 5px;
+    color: #172B4D;
+    font-size: 12px;
+}
+
+/* Switch */
+
+.uiKitSwitchKnobs,
+.uiKitLayerSwitch {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+}
+
+.uiKitButtonSwitch {
+    position: relative;
+    width: 37px;
+    height: 19px;
+    overflow: hidden;
+    border-radius: 71px;
+    border: 1px solid #98A9C9;
+}
+
+.uiKitSwitchCheckbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.uiKitSwitchKnobs {
+    z-index: 2;
+}
+
+.uiKitLayerSwitch {
+    width: 100%;
+    background-color: #fff;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+#button_13 .knobs:before, #button_13 .knobs:after {
+    color: #4e4e4e;
+    z-index: 1;
+}
+
+#button_13 .uiKitSwitchKnobs:before,
+#button_13 .uiKitSwitchKnobs:after,
+#button_13 .uiKitSwitchKnobs span {
+    position: absolute;
+    top: 2px;
+    width: 8px;
+    height: 3px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    padding: 6px 1px;
+    border-radius: 2px;
+    transition: 0.3s ease all
+}
+
+#button_13 .uiKitSwitchKnobs:before,
+#button_13 .uiKitSwitchKnobs:after {
+    color: #4e4e4e;
+    z-index: 1;
+}
+
+#button_13 .uiKitSwitchKnobs:before {
+    content: "";
+    left: 1px;
+    top: -3px;
+    color: white;
+}
+
+#button_13 .uiKitSwitchKnobs:after {
+    content: "";
+    right: 9px;
+    top: -3px;
+    color: white;
+}
+
+#button_13 .uiKitSwitchKnobs span {
+    width: 12px;
+    left: 3px;
+    background-color: #98A9C9;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+#button_13 .uiKitSwitchCheckbox:checked+.uiKitSwitchKnobs span {
+    left: 16px;
+    border-radius: 50%;
+    width: 12px;
+    background-color: #98A9C9;
+}
+
+#button_13 .uiKitSwitchCheckbox:checked~.uiKitLayerSwitch {
+    background-color: #fff;
+}
+
+/* Switch disabled */
+
+.uiKitSwitchDisabledLayer {
+    background-color: #e1e4f0;
+}
+
+.button {
+    cursor: not-allowed !important;
+}
+
+.uiKitSwitchCheckboxDisabled {
+    cursor: not-allowed;
+}
+
+.my_chart_title {
+    color: #172B4D;
+    margin-bottom: 25px;
+}
+
+.headerIconClose {
+    display: flex;
+    align-items: center;
+}

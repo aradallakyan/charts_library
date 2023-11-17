@@ -1,0 +1,11 @@
+.each_row_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.each_card_wrapper {
+    margin-top: 3rem;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
