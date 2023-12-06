@@ -15,10 +15,10 @@ const PieChartSamples = (props) => {
             plotBackgroundColor: null,
             plotBorderWidth: null,
             plotShadow: false,
-            type: "pie",
+            type: "pie"
         },
         title: {
-            text: "Biopsy Samples by Populations",
+            text: "",
             align: "left",
             style: {
                 color: '#172B4D',
@@ -42,8 +42,8 @@ const PieChartSamples = (props) => {
         exporting: {
             enabled: false
         },
-        subtitle: {
-            text: `<span style='font-size:14px'>Total Number <br>of Biopsies</span><br> <b>25</b>`,
+        subtitle: { 
+            text: `<span style='font-size:14px'>Total Number<br> <b>25</b></b>`,
             align: 'center',
             verticalAlign: 'middle',
             y: 10,
@@ -55,7 +55,7 @@ const PieChartSamples = (props) => {
             }
         },
         credits: {
-            enabled: false,
+            enabled: false
         },
         tooltip: {
             pointFormat: "{series.name}:<br>Number of subjects = {point.y} ({point.percentage:.1f}%)",
@@ -85,16 +85,15 @@ const PieChartSamples = (props) => {
                         fontFamily: 'Conv_Roboto-Bold,Sans-Serif',
                         fontSize: '14px'
                     },
-                    connectorColor: 'silver',
-
-                },
-            },
+                    connectorColor: 'silver'
+                }
+            }
         },
         series: [
             {
                 data: data
-            },
-        ],
+            }
+        ]
     };
 
     return <MyCard>
